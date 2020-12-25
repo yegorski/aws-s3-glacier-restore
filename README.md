@@ -34,7 +34,7 @@ When dealing with large number of objects, it may not be feasible to perform the
 > NOTE: Terraform steps below use the [AWS EC2 Instance Terraform Module][] Terraform module.
 
 1. Replace `BUCKET_NAME` in `terraform/ec2.tf` with your bucket.
-1. Run `terraform apply`.
+1. `cd terraform` and run `terraform apply`to create the server.
 1. Manually apply this bucket policy replacing `AWS_ACCOUNT_ID`, `BUCKET_NAME`, and `ROLE_NAME`, allowing the EC2's role to access the bucket:
 
    ```json
@@ -57,7 +57,7 @@ When dealing with large number of objects, it may not be feasible to perform the
 1. SSH into the server `ssh ec2-user@SERVER_ID`.
 1. Become root `sudo su -`.
 1. Check that the server has access to the buckets `aws s3 ls s3://BUCKET_NAME/`.
-1. Copy the `list_objects.py` and `restore.bash` to the server and allow execiution `chmod +x restore.bash`.
+1. Copy the `list_objects.py` and `restore.bash` to the server and allow execution `chmod +x restore.bash`.
 
 ### Perform Glacier Restore
 

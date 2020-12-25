@@ -123,4 +123,8 @@ When dealing with large number of objects, it may not be feasible to perform the
    done
    ```
 
+## Teardown
+
+After the restore, the server is longer needed. Run `terraform destroy`.
+
 [aws ec2 instance terraform module]: https://github.com/yegorski/terraform-aws-ec2

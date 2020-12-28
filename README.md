@@ -127,4 +127,11 @@ When dealing with large number of objects, it may not be feasible to perform the
 
 After the restore, the server is longer needed. Run `terraform destroy`.
 
+## References
+
+1. [Listing even more keys in an S3 bucket with Python][]
+1. [HOW I COULD RESTORE 1 MILLION+ FILES FROM GLACIER TO STANDARD S3][]
+
 [aws ec2 instance terraform module]: https://github.com/yegorski/terraform-aws-ec2
+[Listing even more keys in an S3 bucket with Python]: https://alexwlchan.net/2019/07/listing-s3-keys/
+[HOW I COULD RESTORE 1 MILLION+ FILES FROM GLACIER TO STANDARD S3]: https://www.linuxschoolonline.com/how-i-could-restore-1-million-files-from-glacier-to-standard-s3/
